@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $("#normal").keyup(function() {
-        var words = $("#normal").val();
+    $("#normal").on("input", function() {
+        var words = $(this).val();
 
         // Existing replacements
         words = words.replace(/ar/gi, "arrr");
